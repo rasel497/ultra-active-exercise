@@ -1,10 +1,14 @@
 import logo from './logo.svg';
 import './App.css';
+import Header from './componants/Header/Header';
+import Home from './componants/Home/Home';
 
 function App() {
   return (
     <div className="App">
-      <h2>Ultra Active Excercise</h2>
+      <Header></Header>
+      <Home></Home>
+
     </div>
   );
 }

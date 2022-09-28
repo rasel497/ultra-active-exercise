@@ -1,0 +1,23 @@
+.gym-container {
+    display: grid;
+    grid-template-columns: 4fr 1fr;
+    /* margin: 45px; */
+}
+
+.cards-container {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 45px;
+    margin: 100px 50px;
+}
+
+.profile-container {
+    background-color: palevioletred;
+    padding: 20px;
+}
+
+@media only screen and (max-width: 1100px) {
+    .cards-container {
+        grid-template-columns: repeat(3, 1fr);
+    }
+}
