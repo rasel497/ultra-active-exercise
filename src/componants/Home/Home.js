@@ -1,14 +1,26 @@
-import React from 'react';
+import React, { useEffect, useState } from 'react';
 import ExcerciseTeams from '../../ExcerciseTeams/ExcerciseTeams';
 import './Home.css'
 
 
 const Home = () => {
+    const [teams, setTeams] = useState([]);
+    // console.log(teams);
+
+    useEffect(() => {
+        fetch('data.json')
+            .then(res => res.json())
+            .then(data => setTeams(data))
+    }, [])
 
     return (
         <div className='gym-container'>
             <div className="cards-container">
-                <ExcerciseTeams></ExcerciseTeams>
+                {
+                    teams.map(team => <ExcerciseTeams
+                        key={team.id} team={team}
+                    ></ExcerciseTeams>)
+                }
             </div>
 
             <div className="profile-container">

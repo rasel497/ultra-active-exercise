@@ -1,4 +1,5 @@
 import React from 'react';
+import './ExerciseProfile.css'
 
 const ExerciseProfile = () => {
     return (
