@@ -1,3 +1,49 @@
+.my-name nav a {
+    text-decoration: none;
+    color: white;
+}
+
+.name {
+    font-size: large;
+    font-weight: bold;
+}
+
+.detail-card a {
+    text-decoration: none;
+    margin: 10px;
+    font-size: 25px;
+}
+
+.mydetails {
+    display: flex;
+    background-color: white;
+    border: 2px solid gray;
+    border-radius: 5px;
+    padding: 10px 10px;
+    margin-top: 10px;
+    margin-bottom: 20px;
+
+}
+
+.break-card {
+    display: flex;
+    background-color: white;
+    border-radius: 5px;
+    padding: 10px 10px;
+    margin-top: 10px;
+    margin-bottom: 20px;
+}
+
+.break-card a {
+    text-decoration: none;
+    margin: 10px;
+    font-size: 25px;
+    border-radius: 50%;
+    padding: 8px;
+    background-color: gray;
+    color: white;
+}
+
 .cart {
     position: sticky;
     top: 0;
@@ -6,9 +52,13 @@
 
 .acivity-btn {
     border: none;
-    padding: 10px 20px;
     color: white;
     font-size: 12px;
     font-weight: bold;
+    padding: 8px 15px;
     background-color: blue;
+}
+
+.acivity-btn:hover {
+    background-color: green;
 }
