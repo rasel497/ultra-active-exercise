@@ -1,6 +1,6 @@
 import { faLocationPin } from '@fortawesome/free-solid-svg-icons';
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
-import React, { useState } from 'react';
+import React, { useState, useEffect } from 'react';
 import Home from '../Home/Home';
 import './ExerciseProfile.css'
 
@@ -8,6 +8,18 @@ import './ExerciseProfile.css'
 const ExerciseProfile = ({ cart }) => {
     const [time, setTime] = useState([]);
     console.log(cart);
+
+    const breakTime = (time) => {
+        setTime(time)
+        localStorage.setItem('Break-time', time)
+    }
+
+
+    useEffect(() => {
+        const storagevalue = localStorage.getItem('Break-time')
+        setTime(storagevalue);
+    }, [])
+
 
     let totalTime = 0;
     for (const team of cart) {
@@ -47,10 +59,10 @@ const ExerciseProfile = ({ cart }) => {
                 <div className="add-break">
                     <h3>Add A Break</h3>
                     <div className="break-card">
-                        <button onClick={(e) => { timeHandle(e.target.innerText) }} className='break-btn'>10</button>
-                        <button onClick={(e) => { timeHandle(e.target.innerText) }} className='break-btn'>20</button>
-                        <button onClick={(e) => { timeHandle(e.target.innerText) }} className='break-btn'>30</button>
-                        <button onClick={(e) => { timeHandle(e.target.innerText) }} className='break-btn'>40</button>
+                        <button onClick={() => breakTime(10)} className='break-btn'>10</button>
+                        <button onClick={() => breakTime(20)} className='break-btn'>20</button>
+                        <button onClick={() => breakTime(30)} className='break-btn'>30</button>
+                        <button onClick={() => breakTime(40)} className='break-btn'>40</button>
                     </div>
                 </div>
 
