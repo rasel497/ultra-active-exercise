@@ -1,9 +1,9 @@
 import React from 'react';
+import Home from '../Home/Home';
 import './ExerciseProfile.css'
 
 
-const ExerciseProfile = () => {
-
+const ExerciseProfile = ({ cart }) => {
 
     const activityCompleted = () => {
         alert('Congratulation!')
@@ -11,6 +11,7 @@ const ExerciseProfile = () => {
 
     return (
         <div className='cart'>
+            <h2>THIS IS PROFILE: {cart.length}</h2>
             <div className="my-profile">
                 <img src="" alt="" />
 
@@ -42,8 +43,7 @@ const ExerciseProfile = () => {
 
                 <div className="exercise-details">
                     <h4>Exercise Details</h4>
-
-                    <p className='time-duration'>Exercise time: dynamic</p>
+                    <p className='time-duration'>Exercise time:</p>
                     <p className='time-duration'>Break time: dynamic</p>
 
                 </div>

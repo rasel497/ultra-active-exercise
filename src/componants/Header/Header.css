@@ -1,0 +1,10 @@
+.header-size {
+    display: flex;
+    align-items: center;
+    margin-top: 20px;
+    margin-left: 50px;
+}
+
+.header-size .text-title {
+    margin-left: 5px;
+}
