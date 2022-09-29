@@ -32,14 +32,28 @@ const ExerciseProfile = () => {
                 <div className="add-break">
                     <h4>Add A Break</h4>
                     <div className="break-card">
-                        <a href="0">10s</a>
-                        <a href="0">20s</a>
-                        <a href="0">30s</a>
-                        <a href="0">40s</a>
+                        <button className='break-btn'>10s</button>
+                        <button className='break-btn'>20s</button>
+                        <button className='break-btn'>30s</button>
+                        <button className='break-btn'>40s</button>
+
                     </div>
                 </div>
+
+                <div className="exercise-details">
+                    <h4>Exercise Details</h4>
+
+                    <p className='time-duration'>Exercise time: dynamic</p>
+                    <p className='time-duration'>Break time: dynamic</p>
+
+                </div>
+
+                <div className="acivity">
+                    <button onClick={activityCompleted} className="acivity-btn">Activity Completed</button>
+                </div>
             </div>
-            <button onClick={activityCompleted} className="acivity-btn">Activity Completed</button>
+
+
         </div>
 
 
