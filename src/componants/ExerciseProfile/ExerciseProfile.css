@@ -1,11 +1,19 @@
+.my-name {
+    margin-bottom: 80px;
+}
+
 .my-name nav a {
     text-decoration: none;
     color: white;
 }
 
 .name {
-    font-size: large;
+    font-size: 30px;
     font-weight: bold;
+}
+
+.location {
+    margin-left: 5px;
 }
 
 .detail-card a {
@@ -55,6 +63,9 @@
 .time-duration {
     border: 2px solid gainsboro;
     padding: 10px;
+    font-size: 20px;
+    font-weight: bold;
+
 }
 
 .cart {

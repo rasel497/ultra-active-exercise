@@ -1,4 +1,5 @@
 import React, { useEffect, useState } from 'react';
+import { addToDb, getStoreCart } from '../../utilities/fakedb';
 import ExcerciseTeams from '../ExcerciseTeams/ExcerciseTeams';
 import ExerciseProfile from '../ExerciseProfile/ExerciseProfile';
 import './Home.css'
@@ -8,12 +9,38 @@ const Home = () => {
     const [teams, setTeams] = useState([]);
     // console.log(teams);
     const [cart, setCart] = useState([]);
+    // const [time, setTime] = useState([]);
 
     useEffect(() => {
+        console.log('product load  b')
         fetch('data.json')
             .then(res => res.json())
-            .then(data => setTeams(data))
-    }, [])
+            .then(data => {
+                setTeams(data)
+                // console.log('product loaded')
+            })
+    }, []);
+
+
+    // for db [A-08]
+    useEffect(() => {
+        console.log('local first line addddd', teams)
+        const storedCart = getStoreCart();
+        const savedCart = [];
+        for (const id in storedCart) {
+            const addedProduct = teams.find(team => team.id === id);
+            if (addedProduct) {
+                const quantity = storedCart[id];
+                addedProduct.quantity = quantity;
+                savedCart.push(addedProduct);
+            }
+
+            // console.log(addedProduct);
+            setCart(savedCart);
+        }
+        // console.log('loacal finish')
+    }, [teams])
+
 
 
 
@@ -21,7 +48,10 @@ const Home = () => {
         // console.log(team);
         const newCart = [...cart, team];
         setCart(newCart);
+        addToDb(team.id);
     }
+
+
 
     return (
         <div className='gym-container'>
