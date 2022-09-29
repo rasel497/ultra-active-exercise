@@ -1,13 +1,25 @@
-import React from 'react';
+import React, { useState } from 'react';
 import Home from '../Home/Home';
 import './ExerciseProfile.css'
 
 
 const ExerciseProfile = ({ cart }) => {
+    const [time, setTime] = useState([]);
+
+    let totalTime = 0;
+    for (const team of cart) {
+        totalTime = totalTime + team.time;
+    }
 
     const activityCompleted = () => {
         alert('Congratulation!')
     }
+
+
+    const timeHandle = (ok) => {
+        setTime(ok);
+    }
+
 
     return (
         <div className='cart'>
@@ -33,24 +45,24 @@ const ExerciseProfile = ({ cart }) => {
                 <div className="add-break">
                     <h4>Add A Break</h4>
                     <div className="break-card">
-                        <button className='break-btn'>10s</button>
-                        <button className='break-btn'>20s</button>
-                        <button className='break-btn'>30s</button>
-                        <button className='break-btn'>40s</button>
-
+                        <button onClick={(e) => { timeHandle(e.target.innerText) }} className='break-btn'>10</button>
+                        <button onClick={(e) => { timeHandle(e.target.innerText) }} className='break-btn'>20</button>
+                        <button onClick={(e) => { timeHandle(e.target.innerText) }} className='break-btn'>30</button>
+                        <button onClick={(e) => { timeHandle(e.target.innerText) }} className='break-btn'>40</button>
                     </div>
                 </div>
 
                 <div className="exercise-details">
                     <h4>Exercise Details</h4>
-                    <p className='time-duration'>Exercise time:</p>
-                    <p className='time-duration'>Break time: dynamic</p>
+                    <p className='time-duration'>Exercise time: {totalTime}</p>
+                    <p className='time-duration'>Break time: {time}</p>
 
                 </div>
 
                 <div className="acivity">
                     <button onClick={activityCompleted} className="acivity-btn">Activity Completed</button>
                 </div>
+
             </div>
 
 
