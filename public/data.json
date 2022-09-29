@@ -3,16 +3,16 @@
         "id": "6334b9f46d1b1e0434fee218",
         "name": "Janice Carter",
         "description": "Nora",
-        "age": 40,
-        "time": 33,
+        "age": "25 - 30",
+        "time": 25,
         "img": "https://assets.adidas.com/images/h_840,f_auto,q_auto,fl_lossy,c_fill,g_auto/fbaf991a78bc4896a3e9ad7800abcec6_9366/Ultraboost_22_Shoes_Black_GZ0127_01_standard.jpg"
     },
     {
         "id": "6334b9f40953cd6213f83cf9",
         "name": "Janice Carter",
         "description": "Nora",
-        "age": 40,
-        "time": 33,
+        "age": "30 - 35",
+        "time": 27,
         "img": "https://assets.adidas.com/images/h_840,f_auto,q_auto,fl_lossy,c_fill,g_auto/fbaf991a78bc4896a3e9ad7800abcec6_9366/Ultraboost_22_Shoes_Black_GZ0127_01_standard.jpg"
     },
     {
@@ -20,15 +20,15 @@
         "name": "Janice Carter",
         "description": "Nora",
         "age": 40,
-        "time": 33,
+        "time": 30,
         "img": "https://assets.adidas.com/images/h_840,f_auto,q_auto,fl_lossy,c_fill,g_auto/fbaf991a78bc4896a3e9ad7800abcec6_9366/Ultraboost_22_Shoes_Black_GZ0127_01_standard.jpg"
     },
     {
         "id": "6334b9f423fa0adc422287a7",
         "name": "Janice Carter",
         "description": "Nora",
-        "age": 40,
-        "time": 33,
+        "age": 28,
+        "time": 36,
         "img": "https://assets.adidas.com/images/h_840,f_auto,q_auto,fl_lossy,c_fill,g_auto/fbaf991a78bc4896a3e9ad7800abcec6_9366/Ultraboost_22_Shoes_Black_GZ0127_01_standard.jpg"
     },
     {
@@ -36,7 +36,7 @@
         "name": "Janice Carter",
         "description": "Nora",
         "age": 40,
-        "time": 33,
+        "time": 43,
         "img": "https://assets.adidas.com/images/h_840,f_auto,q_auto,fl_lossy,c_fill,g_auto/fbaf991a78bc4896a3e9ad7800abcec6_9366/Ultraboost_22_Shoes_Black_GZ0127_01_standard.jpg"
     },
     {
@@ -44,7 +44,7 @@
         "name": "Janice Carter",
         "description": "Nora",
         "age": 40,
-        "time": 33,
+        "time": 63,
         "img": "https://assets.adidas.com/images/h_840,f_auto,q_auto,fl_lossy,c_fill,g_auto/fbaf991a78bc4896a3e9ad7800abcec6_9366/Ultraboost_22_Shoes_Black_GZ0127_01_standard.jpg"
     }
 ]

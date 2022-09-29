@@ -1,0 +1,14 @@
+.cart {
+    position: sticky;
+    top: 0;
+    padding: 20px 28px;
+}
+
+.acivity-btn {
+    border: none;
+    padding: 10px 20px;
+    color: white;
+    font-size: 12px;
+    font-weight: bold;
+    background-color: blue;
+}

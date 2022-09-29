@@ -1,5 +1,6 @@
 import React, { useEffect, useState } from 'react';
 import ExcerciseTeams from '../../ExcerciseTeams/ExcerciseTeams';
+import ExerciseProfile from '../ExerciseProfile/ExerciseProfile';
 import './Home.css'
 
 
@@ -25,6 +26,7 @@ const Home = () => {
 
             <div className="profile-container">
                 <h3>Exercise Details: </h3>
+                <ExerciseProfile></ExerciseProfile>
             </div>
 
         </div>
