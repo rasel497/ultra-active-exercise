@@ -1,55 +1,44 @@
+
+/* // for db
+
 // use local storage to manage cart data
 const addToDb = id => {
-    let shoppingCart = {};
+    let addToExcerciseDetails = {};
 
     //get the shopping cart from local storage
-    const storedCart = localStorage.getItem('shopping-cart');
+    const storedCart = localStorage.getItem('exercise-time');
     if (storedCart) {
-        shoppingCart = JSON.parse(storedCart);
+        addToExcerciseDetails = JSON.parse(storedCart);
     }
 
     // add quantity
-    const quantity = shoppingCart[id];
+    const quantity = addToExcerciseDetails[id];
     if (quantity) {
         const newQuantity = quantity + 1;
-        shoppingCart[id] = newQuantity;
+        addToExcerciseDetails[id] = newQuantity;
     }
     else {
-        shoppingCart[id] = 1;
+        addToExcerciseDetails[id] = 1;
     }
-    localStorage.setItem('shopping-cart', JSON.stringify(shoppingCart));
+    localStorage.setItem('exercise-time', JSON.stringify(addToExcerciseDetails));
 }
 
 //01 for Cart local storage store date long time [A-08]
 const getStoreCart = () => {
-    let shoppingCart = {};
+    let addToExcerciseDetails = {};
     //01 get the shopping cart from local storage
-    const storedCart = localStorage.getItem('shopping-cart');
+    const storedCart = localStorage.getItem('exercise-time');
     if (storedCart) {
-        shoppingCart = JSON.parse(storedCart);
+        addToExcerciseDetails = JSON.parse(storedCart);
     }
-    return shoppingCart;
+    return addToExcerciseDetails;
 }
 
-
-const removeFromDb = id => {
-    const storedCart = localStorage.getItem('shopping-cart');
-    if (storedCart) {
-        const shoppingCart = JSON.parse(storedCart);
-        if (id in shoppingCart) {
-            delete shoppingCart[id];
-            localStorage.setItem('shopping-cart', JSON.stringify(shoppingCart));
-        }
-    }
-}
-
-const deleteShoppingCart = () => {
-    localStorage.removeItem('shopping-cart');
-}
 
 export {
     addToDb,
+    //getStoreCart for store local storage excercise detials
     getStoreCart,
-    removeFromDb,
-    deleteShoppingCart
 }
+
+*/

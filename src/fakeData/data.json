@@ -5,7 +5,6 @@
         "description": "Regular physical activity can improve your muscle strength and boost your endurance.",
         "age": 28,
         "time": 36,
-        "quantity": 0,
         "img": "https://images.unsplash.com/photo-1581009137042-c552e485697a?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=870&q=80"
     },
     {
@@ -14,7 +13,6 @@
         "description": "Regular physical activity can improve your muscle strength and boost your endurance.",
         "age": 40,
         "time": 30,
-        "quantity": 0,
         "img": "https://images.unsplash.com/photo-1580086319619-3ed498161c77?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=869&q=80"
     },
     {
@@ -23,7 +21,6 @@
         "description": "Regular physical activity can improve your muscle strength and boost your endurance.",
         "age": 40,
         "time": 43,
-        "quantity": 0,
         "img": "https://images.unsplash.com/photo-1571019614242-c5c5dee9f50b?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=870&q=80"
     },
     {
@@ -32,16 +29,14 @@
         "description": "Regular physical activity can improve your muscle strength and boost your endurance.",
         "age": 40,
         "time": 63,
-        "quantity": 0,
         "img": "https://images.unsplash.com/photo-1613686933606-7f86f06d0d78?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=387&q=80"
     },
     {
         "id": "6334b9f46d1b1e0434fee218",
-        "name": "Heery Ptter",
+        "name": "Janice Carter",
         "description": "Regular physical activity can improve your muscle strength and boost your endurance.",
         "age": "25 - 30",
         "time": 25,
-        "quantity": 0,
         "img": "https://images.unsplash.com/photo-1517836357463-d25dfeac3438?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=870&q=80"
     },
     {
@@ -50,7 +45,30 @@
         "description": "Regular physical activity can improve your muscle strength and boost your endurance.",
         "age": "30 - 35",
         "time": 27,
-        "quantity": 0,
         "img": "https://images.unsplash.com/photo-1581009146145-b5ef050c2e1e?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=870&q=80"
+    },
+    {
+        "id": "6334b9f48eca67d033d14885",
+        "name": "Anastase Maragos",
+        "description": "Regular physical activity can improve your muscle strength and boost your endurance.",
+        "age": 40,
+        "time": 43,
+        "img": "https://images.unsplash.com/photo-1581009146145-b5ef050c2e1e?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxzZWFyY2h8OXx8Z3ltfGVufDB8fDB8fA%3D%3D&auto=format&fit=crop&w=500&q=60"
+    },
+    {
+        "id": "6334b9f4818453243763c5c5",
+        "name": "Daniel Apodaca",
+        "description": "Regular physical activity can improve your muscle strength and boost your endurance.",
+        "age": 40,
+        "time": 63,
+        "img": "https://images.unsplash.com/photo-1507398941214-572c25f4b1dc?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=773&q=80"
+    },
+    {
+        "id": "6334b9f48eca67d033d14885",
+        "name": "Jonathan Shape",
+        "description": "Regular physical activity can improve your muscle strength and boost your endurance.",
+        "age": 40,
+        "time": 43,
+        "img": "https://images.unsplash.com/photo-1604480133435-25b86862d276?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=387&q=80"
     }
 ]

@@ -1,7 +1,3 @@
-.my-name {
-    margin-bottom: 80px;
-}
-
 .my-name nav a {
     text-decoration: none;
     color: white;
@@ -12,8 +8,18 @@
     font-weight: bold;
 }
 
+.user-font {
+    font-size: 25px;
+    margin-bottom: 2px;
+    margin-right: 5px;
+}
+
 .location {
     margin-left: 5px;
+}
+
+.address {
+    margin-left: 10px;
 }
 
 .detail-card a {
@@ -33,14 +39,13 @@
     padding: 10px 10px;
     margin-top: 10px;
     margin-bottom: 20px;
-
 }
 
 .break-card {
     display: flex;
+    justify-content: center;
     background-color: white;
     border-radius: 5px;
-    padding: 10px 10px;
     margin-top: 10px;
     margin-bottom: 20px;
 }
@@ -82,9 +87,9 @@
 .acivity-btn {
     border: none;
     color: white;
-    font-size: 12px;
+    font-size: 17px;
     font-weight: bold;
-    padding: 15px 110px;
+    padding: 15px 70px;
     background-color: blue;
     border-radius: 8px;
 }

@@ -3,7 +3,7 @@ import './ExcerciseTeams.css'
 
 const ExcerciseTeams = (props) => {
     const { addToCart } = props;
-    const { id, name, img, description, age, time } = props.team;
+    const { name, img, description, age, time } = props.team;
 
     // const addToCart = (id) => {
     //     console.log('added', id)
@@ -16,7 +16,6 @@ const ExcerciseTeams = (props) => {
             <div className="card-info">
                 <h3 className="card-name">{name}</h3>
                 <p>{description ? description?.slice(0, 35) : "No description"}...</p>
-                <p><small>Hase id: {id}</small></p>
                 <p><small>For Age: {age}</small></p>
                 <p><small>Time required: {time} </small></p>
             </div>
@@ -29,9 +28,7 @@ const ExcerciseTeams = (props) => {
                 <p className='btn-text'>Add To list</p>
             </button> */}
 
-
         </div>
-
 
     );
 };

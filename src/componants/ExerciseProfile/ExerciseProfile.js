@@ -1,7 +1,6 @@
-import { faLocationPin } from '@fortawesome/free-solid-svg-icons';
+import { faLocationPin, faUser } from '@fortawesome/free-solid-svg-icons';
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 import React, { useState, useEffect } from 'react';
-import Home from '../Home/Home';
 import './ExerciseProfile.css'
 
 
@@ -9,11 +8,11 @@ const ExerciseProfile = ({ cart }) => {
     const [time, setTime] = useState([]);
     console.log(cart);
 
+
     const breakTime = (time) => {
         setTime(time)
         localStorage.setItem('Break-time', time)
     }
-
 
     useEffect(() => {
         const storagevalue = localStorage.getItem('Break-time')
@@ -30,19 +29,14 @@ const ExerciseProfile = ({ cart }) => {
         alert('Congratulation!')
     }
 
-    const timeHandle = (ok) => {
-        setTime(ok);
-    }
-
-
     return (
         <div className='cart'>
-
             <div className="my-name">
                 <nav>
+                    <FontAwesomeIcon className='user-font' icon={faUser}></FontAwesomeIcon>
                     <a className="name" href="/name">Rashel Hossain</a> <br />
-                    <FontAwesomeIcon icon={faLocationPin}></FontAwesomeIcon>
-                    <a className='location' href="/address">Dhaka, Bangladsh</a>
+                    <FontAwesomeIcon className='location' icon={faLocationPin}></FontAwesomeIcon>
+                    <a className='address' href="/address">Dhaka, Bangladsh</a>
                 </nav>
             </div>
 
@@ -68,9 +62,8 @@ const ExerciseProfile = ({ cart }) => {
 
                 <div className="exercise-details">
                     <h3>Exercise Details</h3>
-                    <p className='time-duration'>Exercise time: {totalTime}</p>
-                    <p className='time-duration'>Break time: {time}</p>
-
+                    <p className='time-duration'>Exercise time: {totalTime}s</p>
+                    <p className='time-duration'>Break time: {time}s</p>
                 </div>
 
                 <div className="acivity">
@@ -78,11 +71,7 @@ const ExerciseProfile = ({ cart }) => {
                 </div>
 
             </div>
-
-
         </div>
-
-
     );
 };
 
