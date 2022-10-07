@@ -1,6 +1,8 @@
 import { faLocationPin, faUser } from '@fortawesome/free-solid-svg-icons';
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 import React, { useState, useEffect } from 'react';
+import toast, { Toaster } from 'react-hot-toast';
+
 import './ExerciseProfile.css'
 
 
@@ -25,8 +27,9 @@ const ExerciseProfile = ({ cart }) => {
         totalTime = totalTime + team.time;
     }
 
-    const activityCompleted = () => {
-        alert('Congratulation!')
+    // Toast show
+    const makeToast = () => {
+        toast.success('Activity Successfully done!')
     }
 
     return (
@@ -67,7 +70,13 @@ const ExerciseProfile = ({ cart }) => {
                 </div>
 
                 <div className="acivity">
-                    <button onClick={activityCompleted} className="acivity-btn">Activity Completed</button>
+
+                    <button onClick={makeToast} className="acivity-btn">Make me a toast</button>
+                    <Toaster
+                        // position="top-center"
+                        position="top-right"
+                        reverseOrder={false}
+                    ></Toaster>
                 </div>
 
             </div>
